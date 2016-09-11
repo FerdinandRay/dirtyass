@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_margin="@dimen/card_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="4dp">
+
+    <RelativeLayout
+        android:id="@+id/cardview_ass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tv_ass_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="方卫国"
+            android:textSize="22sp"/>
+        <TextView
+            android:id="@+id/tv_ass_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欠你108元"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/tv_ass_name"/>
+        <TextView
+            android:id="@+id/tv_trade_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欠账108笔"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/tv_trans_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="销账100笔"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_trade_count"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
